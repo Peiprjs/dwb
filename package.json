@@ -1,0 +1,36 @@
+{
+  "name": "dwb",
+  "version": "0.1.1",
+  "description": "This is a Discord welcome (magical) bot - DW(m)B",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peiprjs/dmb.git"
+  },
+  "author": "Peipr#8989",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Peiprjs/dmb/issues"
+  },
+  "homepage": "https://github.com/Peiprjs/dmb#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.7.0",
+    "@discordjs/opus": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "cli-progress": "^3.9.1",
+    "discord-api-types": "^0.24.0",
+    "discord.js": "^13.2.0",
+    "ffmpeg": "^0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "random": "^3.0.6",
+    "ytdl-core": "^4.9.1",
+    "discord-player": "^5.1.0",
+    "ffmpeg-static": "^4.4.0",
+    "ms": "^3.0.0-canary.1",
+    "opusscript": "^0.0.8"
+  }
+}
