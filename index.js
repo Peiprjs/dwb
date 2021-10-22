@@ -1,17 +1,8 @@
 /////////////////ND Modules///////////////////
-// noinspection JSUnusedLocalSymbols,JSCheckFunctionSignatures
+// noinspection JSUnusedLocalSymbols,JSCheckFunctionSignatures,JSIgnoredPromiseFromCall
 // noinspection JSCheckFunctionSignatures
-
-const ytdl = require('ytdl-core');
 const fs = require('fs');
 const random = require('random')
-function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-        currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-}
 /////////////////Discord Modules///////////////////
 const { Client, Collection, Intents } = require('discord.js');
 const { token } = require('./config.json');
@@ -33,16 +24,15 @@ for (const file of commandFiles) {
 }
 /////////////////Once ready///////////////////
 client.once('ready', () => {
-    console.log('Ready!');
+    console.log('Discord bot ready and logged in!');
 });
 client.once('reconnecting', () => {
-    console.log('Reconnecting!');
+    console.log('Gimme a sec.');
 });
 client.once('disconnect', () => {
-    console.log('Disconnect!');
+    console.log('Bye bitch');
 });
 /////////////////Once interaction///////////////////
-// noinspection SpellCheckingInspection
 client.on('interactionCreate', async interaction => {
     if (!interaction.isCommand()) return;
     // noinspection JSUnresolvedVariable
@@ -52,10 +42,12 @@ client.on('interactionCreate', async interaction => {
         await command.execute(interaction);
     } catch (error) {
         console.error(error);
+        //Self-respect 100//
         // noinspection JSUnresolvedFunction
-        await interaction.reply({ content: 'Whoopsies! Something broke', ephemeral: true });
+        await interaction.reply({ content: `Whoopsies! Something broke. Dev's probably being stupid, AGAIN`, ephemeral: true });
     }
 });
+
 /////////////////LogMeIntoDiscordAndBeyond///////////////////
 // noinspection JSIgnoredPromiseFromCall
 client.login(token);
