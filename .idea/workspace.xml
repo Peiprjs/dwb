@@ -7,11 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Here it all starts!">
-      <change afterPath="$PROJECT_DIR$/commands/setup.js" afterDir="false" />
+    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Setup setup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.replit" beforeDir="false" afterPath="$PROJECT_DIR$/.replit" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +106,7 @@
       <updated>1634811566370</updated>
       <workItem from="1634811572680" duration="18889000" />
       <workItem from="1634929827417" duration="2546000" />
-      <workItem from="1634934646467" duration="1437000" />
+      <workItem from="1634934646467" duration="2604000" />
     </task>
     <task id="LOCAL-00001" summary="WHAT THE FUCK IS GOING ON">
       <created>1634830649226</created>
@@ -202,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634930220360</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Setup setup">
+      <created>1634942001670</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1634942001671</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +263,8 @@
     <MESSAGE value="commit message" />
     <MESSAGE value="1" />
     <MESSAGE value="Here it all starts!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Here it all starts!" />
+    <MESSAGE value="Setup setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup setup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
