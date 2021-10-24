@@ -7,9 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="TOOK ME TOO GOD DAMN LONG TO SET COMMAND PERMS, OH MY GOD">
+    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Setup done, I may be able to finish this on time!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/setup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +106,7 @@
       <workItem from="1634811572680" duration="18889000" />
       <workItem from="1634929827417" duration="2546000" />
       <workItem from="1634934646467" duration="2604000" />
-      <workItem from="1635069868648" duration="8509000" />
+      <workItem from="1635069868648" duration="10539000" />
     </task>
     <task id="LOCAL-00001" summary="WHAT THE FUCK IS GOING ON">
       <created>1634830649226</created>
@@ -213,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635081788334</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Setup done, I may be able to finish this on time!">
+      <created>1635082187889</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1635082187889</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +279,8 @@
     <MESSAGE value="Here it all starts!" />
     <MESSAGE value="Setup setup" />
     <MESSAGE value="TOOK ME TOO GOD DAMN LONG TO SET COMMAND PERMS, OH MY GOD" />
-    <option name="LAST_COMMIT_MESSAGE" value="TOOK ME TOO GOD DAMN LONG TO SET COMMAND PERMS, OH MY GOD" />
+    <MESSAGE value="Setup done, I may be able to finish this on time!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup done, I may be able to finish this on time!" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
