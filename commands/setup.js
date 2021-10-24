@@ -8,19 +8,32 @@ module.exports = {
             subcommand
                 .setName('channel')
                 .setDescription('Allows you to set up the channel')
-                .addStringOption(option =>
+                .addChannelOption(option =>
                     option.setName('channel')
                         .setDescription('The channel you want to use as a welcoming channel')
                         .setRequired(true)))
         .addSubcommand(subcommand =>
              subcommand
-                .setName('channel')
-                .setDescription('Allows you to set up the channel')
+                .setName('message')
+                .setDescription('Allows you to set up the message to be sent on join/leave')
                 .addStringOption(option =>
-                    option.setName('channel')
+                    option.setName('message')
                         .setDescription('The channel you want to use as a welcoming channel')
                         .setRequired(true))),
     async execute(interaction) {
-        await interaction.reply({ content: `In progress lmao`, ephemeral: true });
+        if (interaction.options.getSubcommand() === 'channel') {
+            console.log(interaction.member.permissions.has("ADMINISTRATOR"));
+            if (!interaction.member.permissions.has("ADMINISTRATOR")) {
+                await interaction.reply('Oi fuck off, get perms')
+            }
+            if (interaction.member.permissions.has("ADMINISTRATOR")) {
+                const msgchannel = interaction.options.getChannel('channel');
+                let channelID = msgchannel.id;
+                await interaction.reply(`Server welcome channel set successfully to <#${channelID}>`)
+            }
+        }
+        else if (interaction.options.getSubcommand() === 'message') {
+            await interaction.reply(`Server name: ${interaction.guild.name}\nTotal members: ${interaction.guild.memberCount}`);
+        }
     },
 };
