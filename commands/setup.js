@@ -31,9 +31,16 @@ module.exports = {
                 let channelID = msgchannel.id;
                 await interaction.reply(`Server welcome channel set successfully to <#${channelID}>`)
             }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         }
         else if (interaction.options.getSubcommand() === 'message') {
-            await interaction.reply(`Server name: ${interaction.guild.name}\nTotal members: ${interaction.guild.memberCount}`);
+            if (!interaction.member.permissions.has("ADMINISTRATOR")) {
+                await interaction.reply('Oi fuck off, get perms')
+            }
+            if (interaction.member.permissions.has("ADMINISTRATOR")) {
+                const msg = interaction.options.getString('message');
+                await interaction.reply(`Server welcome message successfully set to "${msg}"`)
+            }
         }
     },
 };

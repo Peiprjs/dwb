@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Setup setup">
+    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="TOOK ME TOO GOD DAMN LONG TO SET COMMAND PERMS, OH MY GOD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/setup.js" afterDir="false" />
     </list>
@@ -31,9 +31,6 @@
     <setting file="file://$PROJECT_DIR$/commands/ping.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/index.js" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="2" />
   </component>
   <component name="ProjectId" id="1zoPdhEqUGqp38Lxiz8v0Xjn7RG" />
   <component name="ProjectLevelVcsManager">
@@ -74,7 +71,7 @@
       <recent name="C:\Users\PolRocaCugat\Documents\GitHub\dmb" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.Build test commands">
+  <component name="RunManager" selected="Node.js.Build commands">
     <configuration name="Build commands" type="NodeJSConfigurationType" path-to-js-file="deploy-prod-commands.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -109,7 +106,7 @@
       <workItem from="1634811572680" duration="18889000" />
       <workItem from="1634929827417" duration="2546000" />
       <workItem from="1634934646467" duration="2604000" />
-      <workItem from="1635069868648" duration="8111000" />
+      <workItem from="1635069868648" duration="8509000" />
     </task>
     <task id="LOCAL-00001" summary="WHAT THE FUCK IS GOING ON">
       <created>1634830649226</created>
@@ -209,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634942001671</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="TOOK ME TOO GOD DAMN LONG TO SET COMMAND PERMS, OH MY GOD">
+      <created>1635081788334</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1635081788334</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +271,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="Here it all starts!" />
     <MESSAGE value="Setup setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup setup" />
+    <MESSAGE value="TOOK ME TOO GOD DAMN LONG TO SET COMMAND PERMS, OH MY GOD" />
+    <option name="LAST_COMMIT_MESSAGE" value="TOOK ME TOO GOD DAMN LONG TO SET COMMAND PERMS, OH MY GOD" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
