@@ -44,8 +44,8 @@ module.exports = {
 								let serverID = interaction.guild.id
 								// noinspection JSUnusedLocalSymbols
                 let key = await db.get(serverID);	
-								if (key == channelID) {
-								await interaction.reply(`Server welcome channel set successfully to <#${key}>`);;}
+								if (key === channelID) {
+								await interaction.reply(`Server welcome channel set successfully to <#${key}>`);}
 								else {await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera')}
 }
 								
@@ -64,13 +64,12 @@ module.exports = {
 								await interaction.reply(`Server welcome message is set to "${key}"`)}
 							else {
 								const msg = interaction.options.getString('message');
-                let msgs = msg.string;
 								let serverID = interaction.guild.id;
 								let serverID2 = "2"+serverID;	
 								db.set(serverID2, msg).then(() => {});
 								// noinspection JSUnusedLocalSymbols
                 let key = await db.get(serverID2);
-								if (key == msg) {
+								if (key === msg) {
 								await interaction.reply(`Server welcome channel set successfully to "${key}"`);}
 								else {await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera')}} 
             }
