@@ -1,5 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const Database = require("@replit/database");
+// noinspection JSValidateTypes
 const db = new Database()
 ///////////////////////////////////////////////////
 module.exports = {
@@ -36,7 +37,8 @@ module.exports = {
                 let channelID = msgchannel.id;
 								let serverID = interaction.guild.id
 								console.log (serverID)
-								let key = await db.get(serverID);			await interaction.reply(`Server welcome channel set successfully to <#${channelID}>`);};
+								// noinspection JSUnusedLocalSymbols
+                    let key = await db.get(serverID);			await interaction.reply(`Server welcome channel set successfully to <#${channelID}>`);}
 								
             }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////

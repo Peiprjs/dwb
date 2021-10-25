@@ -1,5 +1,5 @@
 /////////////////ND Modules///////////////////
-// noinspection JSUnusedLocalSymbols,JSCheckFunctionSignatures,JSIgnoredPromiseFromCall
+// noinspection JSUnusedLocalSymbols,JSCheckFunctionSignatures,JSIgnoredPromiseFromCall,JSValidateTypes
 // noinspection JSCheckFunctionSignatures
 const fs = require('fs');
 const random = require('random');
