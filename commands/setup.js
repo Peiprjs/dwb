@@ -1,5 +1,7 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-
+const Database = require("@replit/database");
+const db = new Database()
+///////////////////////////////////////////////////
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('setup')
@@ -23,13 +25,17 @@ module.exports = {
     async execute(interaction) {
         if (interaction.options.getSubcommand() === 'channel') {
             console.log(interaction.member.permissions.has("ADMINISTRATOR"));
+						//CHECK IF USER HAS PERMS//
             if (!interaction.member.permissions.has("ADMINISTRATOR")) {
                 await interaction.reply('Oi fuck off, get perms')
             }
             if (interaction.member.permissions.has("ADMINISTRATOR")) {
                 const msgchannel = interaction.options.getChannel('channel');
                 let channelID = msgchannel.id;
-                await interaction.reply(`Server welcome channel set successfully to <#${channelID}>`)
+								let serverID = interaction.guild.id
+								console.log (serverID)
+								db.set(serverID, channelID).then(() => {});
+								await interaction.reply(`Server welcome channel set successfully to <#${channelID}>`);
             }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         }

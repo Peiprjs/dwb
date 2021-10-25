@@ -4,6 +4,8 @@
 const fs = require('fs');
 const random = require('random');
 const Sequelize = require('sequelize');
+const Database = require("@replit/database");
+const db = new Database()
 /////////////////Discord Modules///////////////////
 const { Client, Collection, Intents } = require('discord.js');
 const { token } = require('./config.json');
@@ -30,6 +32,9 @@ for (const file of commandFiles) {
 client.once('ready', () => {
     console.log('Discord bot ready and logged in!');
     console.log('Syncing tags');
+		console.log('Faking loading: 100%');
+		console.log('Fake load complete!')
+		
 });
 client.once('reconnecting', () => {
     console.log('Gimme a sec.');

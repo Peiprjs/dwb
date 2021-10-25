@@ -21,6 +21,7 @@
     "@discordjs/builders": "^0.7.0",
     "@discordjs/opus": "^0.6.0",
     "@discordjs/rest": "^0.1.0-canary.0",
+    "@replit/database": "^2.0.1",
     "cli-progress": "^3.9.1",
     "discord-api-types": "^0.24.0",
     "discord-player": "^5.1.0",
