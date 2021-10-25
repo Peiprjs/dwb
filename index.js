@@ -19,8 +19,6 @@ const client = new Client({
     ],
     disableMentions: 'everyone',
 });
-/////////////////Database stuff///////////////////
-
 /////////////////Command collection///////////////////
 client.commands = new Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
@@ -28,15 +26,13 @@ for (const file of commandFiles) {
     const command = require(`./commands/${file}`);
     client.commands.set(command.data.name, command);
 }
-/////////////////Once ready///////////////////
+/////////////////Once events///////////////////
 client.once('ready', () => {
     console.log('Syncing tags');
 		console.log('Totally real loading: 100%');
 		console.log('Definitely real load complete!');
 		    console.log('Discord bot ready and logged in!');
-
-		
-});
+		});
 client.once('reconnecting', () => {
     console.log('Gimme a sec.');
 });
@@ -59,6 +55,6 @@ client.on('interactionCreate', async interaction => {
     }
 });
 
-/////////////////LogMeIntoDiscordAndBeyond///////////////////
+/////////////////LogMeIntoDiscordAndBeyond//////////////
 // noinspection JSIgnoredPromiseFromCall
 client.login(token);

@@ -19,21 +19,16 @@
   "homepage": "https://github.com/Peiprjs/dmb#readme",
   "dependencies": {
     "@discordjs/builders": "^0.7.0",
-    "@discordjs/opus": "^0.6.0",
     "@discordjs/rest": "^0.1.0-canary.0",
     "@replit/database": "^2.0.1",
     "cli-progress": "^3.9.1",
     "discord-api-types": "^0.24.0",
-    "discord-player": "^5.1.0",
+    "discord-welcome-card": "^4.0.3",
     "discord.js": "^13.2.0",
-    "ffmpeg": "^0.0.4",
-    "ffmpeg-static": "^4.4.0",
-    "fluent-ffmpeg": "^2.1.2",
     "ms": "^3.0.0-canary.1",
     "opusscript": "^0.0.8",
     "random": "^3.0.6",
     "sequelize": "^6.8.0",
-    "sqlite3": "^5.0.2",
-    "ytdl-core": "^4.9.1"
+    "sqlite3": "^5.0.2"
   }
 }

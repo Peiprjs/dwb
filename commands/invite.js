@@ -8,3 +8,4 @@ module.exports = {
         await interaction.reply({ content: `**Invite me at**: https://discord.com/oauth2/authorize?client_id=900664144418734080&permissions=3149064&scope=applications.commands%20bot`, ephemeral: true });
     },
 };
+/*This command is self-documenting*/

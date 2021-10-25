@@ -1,6 +1,5 @@
 /////////////////Modules///////////////////
 // noinspection JSClosureCompilerSyntax,JSUnusedLocalSymbols,DuplicatedCode,JSCheckFunctionSignatures
-
 const fs = require('fs');
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { REST } = require('@discordjs/rest');
@@ -19,4 +18,7 @@ console.log(commands.length)
 rest.put(Routes.applicationGuildCommands(clientId, guildId), { body: commands })
     .then(() => console.log('Successfully registered application commands.'))
     .catch(console.error);
+
+/*I definitely did not copy this from discordjs.guide.
+DEFINITELY NOT, WHAT ARE YOU TALKING ABOUT */
 

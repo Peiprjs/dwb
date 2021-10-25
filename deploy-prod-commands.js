@@ -31,3 +31,5 @@ console.log(commands.length);
         console.error(error);
     }
 })();
+/*I definitely did not copy this from discordjs.guide.
+DEFINITELY NOT, WHAT ARE YOU TALKING ABOUT */
