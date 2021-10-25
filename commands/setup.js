@@ -37,7 +37,8 @@ module.exports = {
 									await interaction.reply(`Server welcome channel is set to <#${key}>`)}
 								else {
 								const msgchannel = interaction.options.getChannel('channel');
-                let channelID = msgchannel.id;
+                // noinspection JSUnusedLocalSymbols
+                    let channelID = msgchannel.id;
 								let serverID = interaction.guild.id
 								console.log (serverID)
 								// noinspection JSUnusedLocalSymbols
