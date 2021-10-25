@@ -47,6 +47,7 @@ client.on('interactionCreate', async interaction => {
         await interaction.reply({ content: `Whoopsies! Something broke. Dev's probably being stupid, AGAIN`, ephemeral: true });
     }
 });
+
 /////////////////LogMeIntoDiscordAndBeyond///////////////////
 // noinspection JSIgnoredPromiseFromCall
 client.login(token);
