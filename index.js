@@ -9,7 +9,6 @@ const db = new Database()
 /////////////////Discord Modules///////////////////
 const { Client, Collection, Intents } = require('discord.js');
 const { token } = require('./config.json');
-const { dbpass } = require('./config.json')
 const client = new Client({
     intents: [
         Intents.FLAGS.GUILDS,
