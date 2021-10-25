@@ -13,7 +13,7 @@ module.exports = {
                 .addChannelOption(option =>
                     option.setName('channel')
                         .setDescription('The channel you want to use as a welcoming channel')
-                        .setRequired(true)))
+                        .setRequired(false)))
         .addSubcommand(subcommand =>
              subcommand
                 .setName('message')
@@ -21,7 +21,7 @@ module.exports = {
                 .addStringOption(option =>
                     option.setName('message')
                         .setDescription('The channel you want to use as a welcoming channel')
-                        .setRequired(true))),
+                        .setRequired(false))),
     async execute(interaction) {
         if (interaction.options.getSubcommand() === 'channel') {
             console.log(interaction.member.permissions.has("ADMINISTRATOR"));
@@ -34,8 +34,8 @@ module.exports = {
                 let channelID = msgchannel.id;
 								let serverID = interaction.guild.id
 								console.log (serverID)
-								db.set(serverID, channelID).then(() => {});
-								await interaction.reply(`Server welcome channel set successfully to <#${channelID}>`);
+								let key = await db.get(serverID);			await interaction.reply(`Server welcome channel set successfully to <#${channelID}>`);
+								if (!interaction.options.getChannel('channel')) {console.log ('empty')}
             }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         }
