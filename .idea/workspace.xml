@@ -7,9 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Fix issues">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Error check &amp; correction" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +30,7 @@
     <setting file="file://$PROJECT_DIR$/index.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedIndex" value="2" />
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1zoPdhEqUGqp38Lxiz8v0Xjn7RG" />
   <component name="ProjectLevelVcsManager">
@@ -60,7 +58,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReaderModeSettings">
@@ -109,7 +107,8 @@
       <workItem from="1634929827417" duration="2546000" />
       <workItem from="1634934646467" duration="2604000" />
       <workItem from="1635069868648" duration="10600000" />
-      <workItem from="1635150724152" duration="12267000" />
+      <workItem from="1635150724152" duration="12910000" />
+      <workItem from="1635195305730" duration="272000" />
     </task>
     <task id="LOCAL-00001" summary="WHAT THE FUCK IS GOING ON">
       <created>1634830649226</created>
@@ -286,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635176202215</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Error check &amp; correction">
+      <created>1635176463952</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1635176463952</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +359,8 @@
     <MESSAGE value="Went for a repl.it database" />
     <MESSAGE value="npm install" />
     <MESSAGE value="Fix issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix issues" />
+    <MESSAGE value="Error check &amp; correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Error check &amp; correction" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
