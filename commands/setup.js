@@ -30,12 +30,14 @@ module.exports = {
                 await interaction.reply('Oi fuck off, get perms')
             }
             if (interaction.member.permissions.has("ADMINISTRATOR")) {
-                const msgchannel = interaction.options.getChannel('channel');
+                if (!interaction.options.getChannel('channel')) {console.log ('empty')}
+								else {
+								const msgchannel = interaction.options.getChannel('channel');
                 let channelID = msgchannel.id;
 								let serverID = interaction.guild.id
 								console.log (serverID)
-								let key = await db.get(serverID);			await interaction.reply(`Server welcome channel set successfully to <#${channelID}>`);
-								if (!interaction.options.getChannel('channel')) {console.log ('empty')}
+								let key = await db.get(serverID);			await interaction.reply(`Server welcome channel set successfully to <#${channelID}>`);};
+								
             }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         }
