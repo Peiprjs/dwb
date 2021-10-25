@@ -2,10 +2,12 @@
 // noinspection JSUnusedLocalSymbols,JSCheckFunctionSignatures,JSIgnoredPromiseFromCall
 // noinspection JSCheckFunctionSignatures
 const fs = require('fs');
-const random = require('random')
+const random = require('random');
+const Sequelize = require('sequelize');
 /////////////////Discord Modules///////////////////
 const { Client, Collection, Intents } = require('discord.js');
 const { token } = require('./config.json');
+const { dbpass } = require('./config.json')
 const client = new Client({
     intents: [
         Intents.FLAGS.GUILDS,
@@ -14,6 +16,14 @@ const client = new Client({
         Intents.FLAGS.GUILD_VOICE_STATES
     ],
     disableMentions: 'everyone',
+});
+/////////////////Database stuff///////////////////
+const sequelize = new Sequelize('database', 'user', 'password', {
+    host: 'localhost',
+    dialect: 'sqlite',
+    logging: false,
+    // SQLite only
+    storage: 'database.sqlite',
 });
 /////////////////Command collection///////////////////
 client.commands = new Collection();
@@ -25,6 +35,7 @@ for (const file of commandFiles) {
 /////////////////Once ready///////////////////
 client.once('ready', () => {
     console.log('Discord bot ready and logged in!');
+    //Database
 });
 client.once('reconnecting', () => {
     console.log('Gimme a sec.');
