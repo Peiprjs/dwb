@@ -31,14 +31,17 @@ module.exports = {
                 await interaction.reply('Oi fuck off, get perms')
             }
             if (interaction.member.permissions.has("ADMINISTRATOR")) {
-                if (!interaction.options.getChannel('channel')) {console.log ('empty')}
+                if (!interaction.options.getChannel('channel')) {
+									let serverID = interaction.guild.id;
+									let key = await db.get(serverID);
+									await interaction.reply(`Server welcome channel is set to <#${key}>`)}
 								else {
 								const msgchannel = interaction.options.getChannel('channel');
                 let channelID = msgchannel.id;
 								let serverID = interaction.guild.id
 								console.log (serverID)
 								// noinspection JSUnusedLocalSymbols
-                    let key = await db.get(serverID);			await interaction.reply(`Server welcome channel set successfully to <#${channelID}>`);}
+                let key = await db.get(serverID);			await interaction.reply(`Server welcome channel set successfully to <#${key}>`);}
 								
             }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -48,8 +51,19 @@ module.exports = {
                 await interaction.reply('Oi fuck off, get perms')
             }
             if (interaction.member.permissions.has("ADMINISTRATOR")) {
-                const msg = interaction.options.getString('message');
-                await interaction.reply(`Server welcome message successfully set to "${msg}"`)
+							if (!interaction.options.getString('message')) {
+									let serverID = interaction.guild.id;
+									let key = await db.get(serverID);
+									await interaction.reply(`Server welcome message is set to <#${key}>`)}
+							else {
+								const msg = interaction.options.getString('message');
+                let msgs = msg.string;
+								let serverID = interaction.guild.id;
+								let serverID2 = "2"+serverID;	
+								console.log (msgs);		
+								db.set(serverID2, msg).then(() => {});
+								// noinspection JSUnusedLocalSymbols
+                let key = await db.get(serverID);			await interaction.reply(`Server welcome channel set successfully to <#${key}>`);}
             }
         }
     },

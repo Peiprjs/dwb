@@ -30,17 +30,18 @@ for (const file of commandFiles) {
 }
 /////////////////Once ready///////////////////
 client.once('ready', () => {
-    console.log('Discord bot ready and logged in!');
     console.log('Syncing tags');
-		console.log('Faking loading: 100%');
-		console.log('Fake load complete!')
+		console.log('Totally real loading: 100%');
+		console.log('Definitely real load complete!');
+		    console.log('Discord bot ready and logged in!');
+
 		
 });
 client.once('reconnecting', () => {
     console.log('Gimme a sec.');
 });
 client.once('disconnect', () => {
-    console.log('Bye bitch');
+    console.log('Whoopsie doodles! Something went wrong. Wohowo.');
 });
 /////////////////Once interaction///////////////////
 client.on('interactionCreate', async interaction => {
