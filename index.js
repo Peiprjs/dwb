@@ -18,6 +18,7 @@ const client = new Client({
     disableMentions: 'everyone',
 });
 /////////////////Database stuff///////////////////
+/* //TODO: REMOVE THIS COMMENT WHEN DATABASE IS READY
 const sequelize = new Sequelize('database', 'user', 'password', {
     host: 'localhost',
     dialect: 'sqlite',
@@ -25,6 +26,23 @@ const sequelize = new Sequelize('database', 'user', 'password', {
     // SQLite only
     storage: 'database.sqlite',
 });
+const Tags = sequelize.define('tags', {
+	name: {
+		type: Sequelize.STRING,
+		unique: true,
+	},
+		welcome: Sequelize.STRING,
+	serverUSID: {
+		type: Sequelize.INTEGER,
+		defaultValue: 0,
+		allowNull: false,
+	serverWCID: {
+		type: Sequelize.INTEGER,
+		defaultValue: 0,
+		allowNull: false,
+	},
+});
+*/
 /////////////////Command collection///////////////////
 client.commands = new Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
@@ -35,7 +53,8 @@ for (const file of commandFiles) {
 /////////////////Once ready///////////////////
 client.once('ready', () => {
     console.log('Discord bot ready and logged in!');
-    //Database
+    console.log('Syncing tags');
+    /*Tags.sync();*/
 });
 client.once('reconnecting', () => {
     console.log('Gimme a sec.');
