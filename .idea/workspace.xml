@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Trying stuff">
+    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Getting ready for the database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
@@ -107,7 +107,7 @@
       <workItem from="1634929827417" duration="2546000" />
       <workItem from="1634934646467" duration="2604000" />
       <workItem from="1635069868648" duration="10600000" />
-      <workItem from="1635150724152" duration="5500000" />
+      <workItem from="1635150724152" duration="8485000" />
     </task>
     <task id="LOCAL-00001" summary="WHAT THE FUCK IS GOING ON">
       <created>1634830649226</created>
@@ -242,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635156875375</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Getting ready for the database">
+      <created>1635157957210</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1635157957218</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +311,8 @@
     <MESSAGE value="." />
     <MESSAGE value="Database time baby!&#10;&#10;&#10;&#10;&#10;hxppythxghts.png" />
     <MESSAGE value="Trying stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying stuff" />
+    <MESSAGE value="Getting ready for the database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Getting ready for the database" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
