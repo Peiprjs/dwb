@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Getting ready for the database, probably going to go for a repl.it database, easier.">
+    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Fix issues">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +30,9 @@
     <setting file="file://$PROJECT_DIR$/commands/ping.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/index.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1zoPdhEqUGqp38Lxiz8v0Xjn7RG" />
   <component name="ProjectLevelVcsManager">
@@ -106,7 +109,7 @@
       <workItem from="1634929827417" duration="2546000" />
       <workItem from="1634934646467" duration="2604000" />
       <workItem from="1635069868648" duration="10600000" />
-      <workItem from="1635150724152" duration="9971000" />
+      <workItem from="1635150724152" duration="12018000" />
     </task>
     <task id="LOCAL-00001" summary="WHAT THE FUCK IS GOING ON">
       <created>1634830649226</created>
@@ -255,7 +258,28 @@
       <option name="project" value="LOCAL" />
       <updated>1635168698268</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Went for a repl.it database">
+      <created>1635173415062</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1635173415062</updated>
+    </task>
+    <task id="LOCAL-00023" summary="npm install">
+      <created>1635173656230</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1635173656230</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fix issues">
+      <created>1635173781198</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1635173781198</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +343,10 @@
     <MESSAGE value="Trying stuff" />
     <MESSAGE value="Getting ready for the database" />
     <MESSAGE value="Getting ready for the database, probably going to go for a repl.it database, easier." />
-    <option name="LAST_COMMIT_MESSAGE" value="Getting ready for the database, probably going to go for a repl.it database, easier." />
+    <MESSAGE value="Went for a repl.it database" />
+    <MESSAGE value="npm install" />
+    <MESSAGE value="Fix issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix issues" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
