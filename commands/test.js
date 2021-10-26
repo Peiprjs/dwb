@@ -7,11 +7,12 @@ module.exports = {
         .setName('test')
         .setDescription('Test the welcome card!'),
     async execute(interaction) {
-			    const image = await drawCard({
+			    // noinspection JSUnresolvedFunction
+        const image = await drawCard({
         theme: "circuit",
         text: {
             title: 'Hellloo',
-            text: message.author.tag,
+            text: "AAA#5131",
             subtitle: 'please read the Rules',
             color: `#88f`
         },

@@ -54,14 +54,6 @@ module.exports = {
             .addStringOption(option =>
                 option.setName('link')
                 .setDescription('The direct link to the image you want to use (the link should end with .png or .jpeg).')
-                .setRequired(false))
-            .addBooleanOption(option =>
-                option.setName('blur')
-                .setDescription('Should the background image be blurred?')
-                .setRequired(false))
-            .addBooleanOption(option =>
-                option.setName('rounded')
-                .setDescription('Should the edges be rounded?')
                 .setRequired(false))),
 ////////////////////////SET_CHN/////////////////////////
     async execute(interaction) {
@@ -194,9 +186,9 @@ module.exports = {
                     let serverID2 = "5" + serverID;
                     db.set(serverID2, msg).then(() => {});
                     // noinspection JSUnusedLocalSymbols
-                    let bgimg = await db.get(serverID2);
+                    let key = await db.get(serverID2);
                     if (key === msg) {
-                    await interaction.reply(`Server welcome card background set successfully to ${bgimg}`);
+                    await interaction.reply(`Server welcome card background set successfully to ${key}`);
                     } else {
                         await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera');
 												console.log("Database error bro")
