@@ -62,8 +62,7 @@ module.exports = {
             .addBooleanOption(option =>
                 option.setName('rounded')
                 .setDescription('Should the edges be rounded?')
-                .setRequired(false))								
-							,
+                .setRequired(false)),
 ////////////////////////SET_CHN/////////////////////////
     async execute(interaction) {
         if (interaction.options.getSubcommand() === 'channel') {
@@ -194,6 +193,9 @@ module.exports = {
                     db.set(serverID2, msg).then(() => {});
                     // noinspection JSUnusedLocalSymbols
                     let key = await db.get(serverID2);
+						///////////////////////////////////////////////////////////
+						///////////////////////////////////////////////////////////
+
                     if (key === msg) {
                         await interaction.reply(`Server welcome card background set successfully to ${key}`);
                     } else {
