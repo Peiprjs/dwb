@@ -54,7 +54,7 @@ client.on('interactionCreate', async interaction => {
     }
 });
 ///////////////////Actual welcome function///////////////////////////
-client.on("messageCreate", async message => {
+client.on("guildMemberAdd", async message => {
     if(message.author.bot) return
     //Generating the actual custom Card
     const image = await drawCard({
