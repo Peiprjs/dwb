@@ -54,13 +54,11 @@ client.on('interactionCreate', async interaction => {
     }
 });
 ///////////////////Actual welcome function///////////////////////////
-client.on("guildMemberAdd", async message => {
-    if(message.author.bot) return
-    //Generating the actual custom Card
-    const image = await drawCard({
+client.on('guildMemberAdd', (member)  => { 
+    const image = drawCard({
         theme: "circuit",
         text: {
-            title: 'Hello',
+            title: 'Hellloo',
             text: message.author.tag,
             subtitle: 'please read the Rules',
             color: `#88f`
@@ -80,7 +78,7 @@ client.on("guildMemberAdd", async message => {
     });
 
     message.channel.send({ files: [ image ] })
-});
+})
 /////////////////LogMeIntoDiscordAndBeyond//////////////
 // noinspection JSIgnoredPromiseFromCall
 client.login(token);
