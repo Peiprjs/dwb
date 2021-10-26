@@ -87,6 +87,7 @@ module.exports = {
                         await interaction.reply(`Server welcome channel set successfully to <#${key}>`);
                     } else {
                         await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera')
+												console.log("Database error bro")
                     }
                 }
 
@@ -114,6 +115,7 @@ module.exports = {
                         await interaction.reply(`Server welcome title set successfully to "${key}"`);
                     } else {
                         await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera')
+												console.log("Database error bro")
                     }
                 }
             }
@@ -140,6 +142,7 @@ module.exports = {
                         await interaction.reply(`Server welcome subtitle set successfully to "${key}"`);
                     } else {
                         await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera')
+												console.log("Database error bro")
                     }
                 }
             }
@@ -168,6 +171,7 @@ module.exports = {
                         await interaction.reply(`Server welcome text colour set successfully to ${key}`);
                     } else {
                         await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera')
+												console.log("Database error bro")
                     }
                 }
             }
@@ -178,23 +182,23 @@ module.exports = {
                 await interaction.reply('Oi fuck off, get perms')
             }
             if (interaction.member.permissions.has("ADMINISTRATOR")) {
-                if (!interaction.options.getString('background')) {
+                if (!interaction.options.getString('link')) {
                     let serverID = interaction.guild.id;
                     let serverID2 = "5" + serverID;
                     let key = await db.get(serverID2);
                     await interaction.reply(`Server welcome card background set to ${key}`)
                 } else {
-                    const msg = interaction.options.getString('background');
+                    let msg = interaction.options.getString('link');
                     let serverID = interaction.guild.id;
                     let serverID2 = "5" + serverID;
                     db.set(serverID2, msg).then(() => {});
                     // noinspection JSUnusedLocalSymbols
                     let key = await db.get(serverID2);
-                    console.log(key)
                     if (key === msg) {
                         await interaction.reply(`Server welcome card background set successfully to ${key}`);
                     } else {
-                        await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera')
+                        await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera');
+												console.log("Database error bro")
                     }
                 }
             }
