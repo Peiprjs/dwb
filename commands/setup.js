@@ -145,7 +145,7 @@ module.exports = {
 					// noinspection JSUnusedLocalSymbols
 					let key = await db.get(serverID2);
 					console.log(key)
-					if (key === msg2) {
+					if (key === msg) {
 						await interaction.reply(`Server welcome text colour set successfully to ${key}`);
 					} else {
 						await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera')
