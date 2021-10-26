@@ -6,8 +6,7 @@ const random = require('random');
 const Sequelize = require('sequelize');
 const Database = require("@replit/database");
 const db = new Database();
-const { welcomeImage } = require('discord-welcome-card');
-/////////////////Discord Modules///////////////////
+const { drawCard } = require('discord-welcome-card');/////////////////Discord Modules///////////////////
 const { Client, Collection, Intents } = require('discord.js');
 const { token } = require('./config.json');
 const client = new Client({
