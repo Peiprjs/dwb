@@ -81,7 +81,7 @@ module.exports = {
 							else {
 								const msg = interaction.options.getString('message');
 								let serverID = interaction.guild.id;
-								let serverID2 = "2"+serverID;	
+								let serverID2 = "2" + serverID;	
 								db.set(serverID2, msg).then(() => {});
 								// noinspection JSUnusedLocalSymbols
                 let key = await db.get(serverID2);
