@@ -7,7 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Error check &amp; correction" />
+    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Error check &amp; correction. Nice bugs have been squashed and reclassified as features.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +32,7 @@
     <setting file="file://$PROJECT_DIR$/index.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedIndex" value="2" />
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1zoPdhEqUGqp38Lxiz8v0Xjn7RG" />
   <component name="ProjectLevelVcsManager">
@@ -109,7 +111,7 @@
       <workItem from="1635069868648" duration="10600000" />
       <workItem from="1635150724152" duration="12910000" />
       <workItem from="1635195305730" duration="272000" />
-      <workItem from="1635195621437" duration="120000" />
+      <workItem from="1635195621437" duration="2325000" />
     </task>
     <task id="LOCAL-00001" summary="WHAT THE FUCK IS GOING ON">
       <created>1634830649226</created>
@@ -300,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635195726813</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Error check &amp; correction. Nice bugs have been squashed and reclassified as features.">
+      <created>1635195951534</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1635195951534</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +377,8 @@
     <MESSAGE value="npm install" />
     <MESSAGE value="Fix issues" />
     <MESSAGE value="Error check &amp; correction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Error check &amp; correction" />
+    <MESSAGE value="Error check &amp; correction. Nice bugs have been squashed and reclassified as features." />
+    <option name="LAST_COMMIT_MESSAGE" value="Error check &amp; correction. Nice bugs have been squashed and reclassified as features." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
