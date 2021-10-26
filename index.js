@@ -54,7 +54,7 @@ client.on('interactionCreate', async interaction => {
     }
 });
 ///////////////////Actual welcomer///////////////////////////
-client.on("message", async message => {
+client.on("messageCreate", async message => {
     if(message.author.bot) return
 		let serverID = interaction.guild.id;
 		let serverID2 = "2"+serverID;
@@ -70,12 +70,10 @@ client.on("message", async message => {
         avatar: {
             image: msg.author.displayAvatarURL({ format: 'png' }),
             outlineWidth: 5,
-            outlineColor: new Gradient('linear',
-                [0, '#33f'],
-                [1, '#f33']
-            ),
+            outlineColor: ``,
         },
-        background: 'https://i.imgur.com/ea9PB3H.png',
+				
+				background: 'https://i.imgur.com/ea9PB3H.png',
         blur: 1,
         border: true,
         rounded: true
