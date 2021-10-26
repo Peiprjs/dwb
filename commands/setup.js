@@ -19,12 +19,28 @@ module.exports = {
 				//SUBCOMMAND MESSAGE//
         .addSubcommand(subcommand =>
              subcommand
-                .setName('message')
-                .setDescription('Allows you to set up the message to be sent on join/leave')
+                .setName('title')
+                .setDescription('Allows you to set up the title of the card to be sent on join/leave')
                 .addStringOption(option =>
-                    option.setName('message')
-                        .setDescription('The channel you want to use as a welcoming channel')
-                        .setRequired(false))),
+                    option.setName('title')
+                        .setDescription('The title of the welcome card')
+                        .setRequired(false)))
+		.addSubcommand(subcommand =>
+			subcommand
+				.setName('subtitle')
+				.setDescription('Allows you to set up the subtitle of the card to be sent on join/leave')
+				.addStringOption(option =>
+					option.setName('message')
+						.setDescription('The message you want to use as a subtitle of the welcome card	')
+						.setRequired(false)))
+			.addSubcommand(subcommand =>
+				subcommand
+					.setName('colour')
+					.setDescription('Allows you to set up the color of the text of the card to be sent on join/leave')
+					.addIntegerOption(option =>
+						option.setName('colour')
+							.setDescription('The color you want to use for the of the welcome card. HEX only.')
+							.setRequired(false))),
 ////////////////////////SET_CHN/////////////////////////
     async execute(interaction) {
         if (interaction.options.getSubcommand() === 'channel') {
@@ -51,8 +67,8 @@ module.exports = {
 								
             }
         }
-////////////////////////SET_MSG/////////////////////////
-        else if (interaction.options.getSubcommand() === 'message') {
+////////////////////////SET_TIT/////////////////////////
+        else if (interaction.options.getSubcommand() === 'title') {
             if (!interaction.member.permissions.has("ADMINISTRATOR")) {
                 await interaction.reply('Oi fuck off, get perms')
             }
@@ -61,7 +77,7 @@ module.exports = {
 								let serverID = interaction.guild.id;
 								let serverID2 = "2"+serverID;
 								let key = await db.get(serverID2);
-								await interaction.reply(`Server welcome message is set to "${key}"`)}
+								await interaction.reply(`Server welcome title is set to "${key}"`)}
 							else {
 								const msg = interaction.options.getString('message');
 								let serverID = interaction.guild.id;
@@ -70,9 +86,59 @@ module.exports = {
 								// noinspection JSUnusedLocalSymbols
                 let key = await db.get(serverID2);
 								if (key === msg) {
-								await interaction.reply(`Server welcome channel set successfully to "${key}"`);}
+								await interaction.reply(`Server welcome title set successfully to "${key}"`);}
 								else {await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera')}} 
             }
         }
-    },
+////////////////////////SET_SUB/////////////////////////
+		else if (interaction.options.getSubcommand() === 'subtitle') {
+			if (!interaction.member.permissions.has("ADMINISTRATOR")) {
+				await interaction.reply('Oi fuck off, get perms')
+			}
+			if (interaction.member.permissions.has("ADMINISTRATOR")) {
+				if (!interaction.options.getString('message')) {
+					let serverID = interaction.guild.id;
+					let serverID2 = "3"+serverID;
+					let key = await db.get(serverID2);
+					await interaction.reply(`Server welcome subtitle is set to "${key}"`)}
+				else {
+					const msg = interaction.options.getString('message');
+					let serverID = interaction.guild.id;
+					let serverID2 = "3"+serverID;
+					db.set(serverID2, msg).then(() => {});
+					// noinspection JSUnusedLocalSymbols
+					let key = await db.get(serverID2);
+					if (key === msg) {
+						await interaction.reply(`Server welcome subtitle set successfully to "${key}"`);}
+					else {await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera')}}
+			}
+		}
+////////////////////////SET_SUB/////////////////////////
+		else if (interaction.options.getSubcommand() === 'colour') {
+			if (!interaction.member.permissions.has("ADMINISTRATOR")) {
+				await interaction.reply('Oi fuck off, get perms')
+			}
+			if (interaction.member.permissions.has("ADMINISTRATOR")) {
+				if (!interaction.options.getString('message')) {
+					let serverID = interaction.guild.id;
+					let serverID2 = "4" + serverID;
+					let key = await db.get(serverID2);
+					await interaction.reply(`Server welcome subtitle is set to "${key}"`)
+				} else {
+					const msg = interaction.options.getInteger('colour');
+					let serverID = interaction.guild.id;
+					let serverID2 = "4" + serverID;
+					const msg2 = "#" + msg
+					db.set(serverID2, msg2).then(() => {
+					});
+					// noinspection JSUnusedLocalSymbols
+					let key = await db.get(serverID2);
+					if (key === msg2) {
+						await interaction.reply(`Server welcome subtitle set successfully to "${key}"`);
+					} else {
+						await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera')
+					}
+				}}}
+/////////////////////////////////////END OF CODE///////////////////////////////////////////
+		},
 };

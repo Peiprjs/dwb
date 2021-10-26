@@ -7,8 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Error check &amp; correction. Nice bugs have been squashed and reclassified as features.">
+    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="WS being WS again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/setup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +31,6 @@
     <setting file="file://$PROJECT_DIR$/commands/ping.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/index.js" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1zoPdhEqUGqp38Lxiz8v0Xjn7RG" />
   <component name="ProjectLevelVcsManager">
@@ -111,7 +109,7 @@
       <workItem from="1635069868648" duration="10600000" />
       <workItem from="1635150724152" duration="12910000" />
       <workItem from="1635195305730" duration="272000" />
-      <workItem from="1635195621437" duration="2325000" />
+      <workItem from="1635195621437" duration="4658000" />
     </task>
     <task id="LOCAL-00001" summary="WHAT THE FUCK IS GOING ON">
       <created>1634830649226</created>
@@ -309,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635195951534</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="WS being WS again">
+      <created>1635235978052</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1635235978052</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +383,8 @@
     <MESSAGE value="Fix issues" />
     <MESSAGE value="Error check &amp; correction" />
     <MESSAGE value="Error check &amp; correction. Nice bugs have been squashed and reclassified as features." />
-    <option name="LAST_COMMIT_MESSAGE" value="Error check &amp; correction. Nice bugs have been squashed and reclassified as features." />
+    <MESSAGE value="WS being WS again" />
+    <option name="LAST_COMMIT_MESSAGE" value="WS being WS again" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
