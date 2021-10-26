@@ -52,7 +52,7 @@ module.exports = {
             .setName('background')
             .setDescription('Allows you to set up the background image of the card to be sent on join/leave')
             .addStringOption(option =>
-                option.setName('colour')
+                option.setName('link')
                 .setDescription('The direct link to the image you want to use (the link should end with .png or .jpeg).')
                 .setRequired(false)))
             .addBooleanOption(option =>
@@ -184,7 +184,7 @@ module.exports = {
                     let key = await db.get(serverID2);
                     await interaction.reply(`Server welcome card background set to ${key}`)
                 } else {
-                    const msg = interaction.options.getString('colour');
+                    const msg = interaction.options.getString('background');
                     let serverID = interaction.guild.id;
                     let serverID2 = "5" + serverID;
                     db.set(serverID2, msg).then(() => {});
