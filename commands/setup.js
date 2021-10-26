@@ -187,21 +187,20 @@ module.exports = {
                     let key = await db.get(serverID2);
                     await interaction.reply(`Server welcome card background set to ${key}`)
                 } else {
+/////////////////////////////COMMAND HANDLING N' SHIT//////////////////
+									if (!!interaction.options.getString('link') || !!interaction.options.getBoolean('blur') || !!interaction.options.getBoolean('rounded')){
                     let msg = interaction.options.getString('link');
                     let serverID = interaction.guild.id;
                     let serverID2 = "5" + serverID;
                     db.set(serverID2, msg).then(() => {});
                     // noinspection JSUnusedLocalSymbols
-                    let key = await db.get(serverID2);
-						///////////////////////////////////////////////////////////
-						///////////////////////////////////////////////////////////
-
+                    let bgimg = await db.get(serverID2);
                     if (key === msg) {
-                        await interaction.reply(`Server welcome card background set successfully to ${key}`);
+                    await interaction.reply(`Server welcome card background set successfully to ${bgimg}`);
                     } else {
                         await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera');
 												console.log("Database error bro")
-                    }
+                    }}
                 }
             }
         }
