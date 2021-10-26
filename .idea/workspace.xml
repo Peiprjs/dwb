@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Fixed a bug">
+    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="NPM install">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +113,7 @@
       <workItem from="1635150724152" duration="12910000" />
       <workItem from="1635195305730" duration="272000" />
       <workItem from="1635195621437" duration="7776000" />
-      <workItem from="1635249830449" duration="1678000" />
+      <workItem from="1635249830449" duration="3213000" />
     </task>
     <task id="LOCAL-00001" summary="WHAT THE FUCK IS GOING ON">
       <created>1634830649226</created>
@@ -332,7 +332,28 @@
       <option name="project" value="LOCAL" />
       <updated>1635242733225</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="NPM install">
+      <created>1635252084124</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1635252084124</updated>
+    </task>
+    <task id="LOCAL-00033" summary="NPM install">
+      <created>1635252129711</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1635252129711</updated>
+    </task>
+    <task id="LOCAL-00034" summary="NPM install">
+      <created>1635252521347</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1635252521347</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +425,8 @@
     <MESSAGE value="WS being WS again" />
     <MESSAGE value="Adding some more options.&#10;Also, WS being WS again." />
     <MESSAGE value="Fixed a bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug" />
+    <MESSAGE value="NPM install" />
+    <option name="LAST_COMMIT_MESSAGE" value="NPM install" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

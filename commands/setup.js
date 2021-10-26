@@ -4,6 +4,7 @@ const {
 const Database = require("@replit/database");
 // noinspection JSValidateTypes
 const db = new Database()
+// noinspection JSUnresolvedFunction
 module.exports = {
 ///////////////////SLASHIE BUILDER//////////////////////
     data: new SlashCommandBuilder()
@@ -56,7 +57,7 @@ module.exports = {
                 .setRequired(false)))
             .addBooleanOption(option =>
                 option.setName('blur')
-                .setDescription('Should the background image be blured?')
+                .setDescription('Should the background image be blurred?')
                 .setRequired(false))
             .addBooleanOption(option =>
                 option.setName('rounded')
