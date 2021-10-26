@@ -53,7 +53,35 @@ client.on('interactionCreate', async interaction => {
         await interaction.reply({ content: `Whoopsies! Something broke. Dev's probably being stupid, AGAIN`, ephemeral: true });
     }
 });
-
+///////////////////Actual welcomer///////////////////////////
+client.on("message", async message => {
+    if(message.author.bot) return
+		let serverID = interaction.guild.id;
+		let serverID2 = "2"+serverID;
+		let msgs = await db.get(serverID2);
+    const image = await drawCard({
+        theme: "circuit",
+        text: {
+            title: msgs,
+            text: msg.author.tag,
+            subtitle: 'please read the Rules',
+            color: `#88f`
+        },
+        avatar: {
+            image: msg.author.displayAvatarURL({ format: 'png' }),
+            outlineWidth: 5,
+            outlineColor: new Gradient('linear',
+                [0, '#33f'],
+                [1, '#f33']
+            ),
+        },
+        background: 'https://i.imgur.com/ea9PB3H.png',
+        blur: 1,
+        border: true,
+        rounded: true
+    })
+    message.channel.send(new Discord.MessageAttachment(image, 'custom.png'))
+});
 /////////////////LogMeIntoDiscordAndBeyond//////////////
 // noinspection JSIgnoredPromiseFromCall
 client.login(token);
