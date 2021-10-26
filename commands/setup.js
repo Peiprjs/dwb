@@ -54,7 +54,7 @@ module.exports = {
             .addStringOption(option =>
                 option.setName('link')
                 .setDescription('The direct link to the image you want to use (the link should end with .png or .jpeg).')
-                .setRequired(false)))
+                .setRequired(false))
             .addBooleanOption(option =>
                 option.setName('blur')
                 .setDescription('Should the background image be blurred?')
@@ -62,7 +62,7 @@ module.exports = {
             .addBooleanOption(option =>
                 option.setName('rounded')
                 .setDescription('Should the edges be rounded?')
-                .setRequired(false)),
+                .setRequired(false))),
 ////////////////////////SET_CHN/////////////////////////
     async execute(interaction) {
         if (interaction.options.getSubcommand() === 'channel') {
