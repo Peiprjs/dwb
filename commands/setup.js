@@ -37,7 +37,7 @@ module.exports = {
 				subcommand
 					.setName('colour')
 					.setDescription('Allows you to set up the color of the text of the card to be sent on join/leave')
-					.addIntegerOption(option =>
+					.addStringOption(option =>
 						option.setName('colour')
 							.setDescription('The color you want to use for the of the welcome card. HEX only.')
 							.setRequired(false))),
@@ -119,13 +119,13 @@ module.exports = {
 				await interaction.reply('Oi fuck off, get perms')
 			}
 			if (interaction.member.permissions.has("ADMINISTRATOR")) {
-				if (!interaction.options.getString('message')) {
+				if (!interaction.options.getString('colour')) {
 					let serverID = interaction.guild.id;
 					let serverID2 = "4" + serverID;
 					let key = await db.get(serverID2);
-					await interaction.reply(`Server welcome subtitle is set to "${key}"`)
+					await interaction.reply(`Server welcome text colour is set to #${key}`)
 				} else {
-					const msg = interaction.options.getInteger('colour');
+					const msg = interaction.options.getString('colour');
 					let serverID = interaction.guild.id;
 					let serverID2 = "4" + serverID;
 					const msg2 = "#" + msg
@@ -134,7 +134,7 @@ module.exports = {
 					// noinspection JSUnusedLocalSymbols
 					let key = await db.get(serverID2);
 					if (key === msg2) {
-						await interaction.reply(`Server welcome subtitle set successfully to "${key}"`);
+						await interaction.reply(`Server welcome text colour set successfully to #${key}`);
 					} else {
 						await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera')
 					}
