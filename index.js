@@ -1,11 +1,12 @@
 /////////////////ND Modules///////////////////
-// noinspection JSUnusedLocalSymbols,JSCheckFunctionSignatures,JSIgnoredPromiseFromCall,JSValidateTypes
+// noinspection JSUnusedLocalSymbols,JSCheckFunctionSignatures,JSIgnoredPromiseFromCall,JSValidateTypes,JSUnresolvedFunction
 // noinspection JSCheckFunctionSignatures
 const fs = require('fs');
 const random = require('random');
 const Sequelize = require('sequelize');
 const Database = require("@replit/database");
-const db = new Database()
+const db = new Database();
+const { welcomeImage } = require('discord-welcome-card');
 /////////////////Discord Modules///////////////////
 const { Client, Collection, Intents } = require('discord.js');
 const { token } = require('./config.json');
@@ -53,32 +54,33 @@ client.on('interactionCreate', async interaction => {
         await interaction.reply({ content: `Whoopsies! Something broke. Dev's probably being stupid, AGAIN`, ephemeral: true });
     }
 });
-///////////////////Actual welcomer///////////////////////////
+///////////////////Actual welcome function///////////////////////////
 client.on("messageCreate", async message => {
     if(message.author.bot) return
-		let serverID = interaction.guild.id;
-		let serverID2 = "2"+serverID;
-		let msgs = await db.get(serverID2);
+    //Generating the actual custom Card
     const image = await drawCard({
         theme: "circuit",
         text: {
-            title: msgs,
-            text: msg.author.tag,
+            title: 'Hello',
+            text: message.author.tag,
             subtitle: 'please read the Rules',
             color: `#88f`
         },
         avatar: {
-            image: msg.author.displayAvatarURL({ format: 'png' }),
+            image: message.author.displayAvatarURL({ format: 'png' }),
             outlineWidth: 5,
-            outlineColor: ``,
+            outlineColor: new Gradient('linear',
+                [0, '#33f'],
+                [1, '#f33']
+            ),
         },
-				
-				background: 'https://i.imgur.com/ea9PB3H.png',
+        background: 'https://i.imgur.com/ea9PB3H.png',
         blur: 1,
         border: true,
         rounded: true
-    })
-    message.channel.send(new Discord.MessageAttachment(image, 'custom.png'))
+    });
+
+    message.channel.send({ files: [ image ] })
 });
 /////////////////LogMeIntoDiscordAndBeyond//////////////
 // noinspection JSIgnoredPromiseFromCall

@@ -7,9 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Adding some more options.&#10;Also, WS being WS again.">
+    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Fixed a bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/setup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +32,9 @@
     <setting file="file://$PROJECT_DIR$/commands/ping.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/index.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
   </component>
   <component name="ProjectId" id="1zoPdhEqUGqp38Lxiz8v0Xjn7RG" />
   <component name="ProjectLevelVcsManager">
@@ -72,7 +76,7 @@
       <recent name="C:\Users\PolRocaCugat\Documents\GitHub\dmb" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.Build test commands">
+  <component name="RunManager" selected="Node.js.Build commands">
     <configuration name="Build commands" type="NodeJSConfigurationType" path-to-js-file="deploy-prod-commands.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -110,7 +114,7 @@
       <workItem from="1635069868648" duration="10600000" />
       <workItem from="1635150724152" duration="12910000" />
       <workItem from="1635195305730" duration="272000" />
-      <workItem from="1635195621437" duration="6550000" />
+      <workItem from="1635195621437" duration="7776000" />
     </task>
     <task id="LOCAL-00001" summary="WHAT THE FUCK IS GOING ON">
       <created>1634830649226</created>
@@ -322,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635238637192</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Fixed a bug">
+      <created>1635242733224</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1635242733225</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +404,8 @@
     <MESSAGE value="Error check &amp; correction. Nice bugs have been squashed and reclassified as features." />
     <MESSAGE value="WS being WS again" />
     <MESSAGE value="Adding some more options.&#10;Also, WS being WS again." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding some more options.&#10;Also, WS being WS again." />
+    <MESSAGE value="Fixed a bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
