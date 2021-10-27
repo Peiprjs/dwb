@@ -57,8 +57,6 @@ client.on('interactionCreate', async interaction => {
 });
 ///////////////////Actual welcome function///////////////////////////
 client.on("guildMemberAdd", async (member) => {			let serverID = member.guild.id;
-
-console.log(member);
 		let username = member.user.username;
 				let chn = await db.get(serverID)
 				if (!chn) {let channel = "0"}
