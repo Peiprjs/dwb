@@ -54,30 +54,26 @@ client.on('interactionCreate', async interaction => {
     }
 });
 ///////////////////Actual welcome function///////////////////////////
-client.on('guildMemberAdd', (member)  => {
-		let serverID = member.guild.id;
-/*Explanation on how the database SUID work.
-[serverID] = channel to send the message
-2[serverID] = title of the card
-3[serverID] = subtitle of the card
-5[serverID] = background image of the card*/
-				let chn = db.get(serverID);
+client.on("guildMemberAdd", async (member) => {			let serverID = member.guild.id;
+console.log(member);
+		let username = member.user.username;
+				let chn = await db.get(serverID)
 				if (!chn) {let channel = "0"};
-				const channel = client.channels.cache.get(chn);
+		const channel = client.channels.cache.get(chn);	
 		let serverID2 = "2" + serverID;
-				let title = db.get(serverID2);
+				let title = await db.get(serverID2);
 				if (!title) {let title = "Welcome"}
 		let serverID3 = "3" + serverID;
-				let subtitle = db.get(serverID3);
+				let subtitle = await db.get(serverID3);
 				if (!title) {let subtitle = "or smthn"}
 		let serverID5 = "4" + serverID;
-				let bgimg = db.get(serverID5);
+				let bgimg = await db.get(serverID5);
 				if (!bgimg) {let bgimg = "https://i.imgur.com/ea9PB3H.png"}
-    let image = drawCard({
+    let image = await drawCard({
         theme: "code",
         text: {
             title: title,
-            text: member.user.tag,
+            text: username,
             subtitle: subtitle,
             color: `#140E32`
         },
@@ -86,14 +82,14 @@ client.on('guildMemberAdd', (member)  => {
             outlineWidth: 5,
             outlineColor: `#271496`,
         },
-        background: bgimg,
+        background: "https://i.imgur.com/ea9PB3H.png",
         blur: 1,
         border: true,
         rounded: true
     });
-
-    channel.send({ files: [ image ] })
-})
+		console.log(image)
+		channel.send("Elo")
+	})
 /////////////////LogMeIntoDiscordAndBeyond//////////////
 // noinspection JSIgnoredPromiseFromCall
 client.login(token);
