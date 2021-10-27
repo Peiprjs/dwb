@@ -1,6 +1,7 @@
 /////////////////ND Modules///////////////////
 // noinspection JSUnusedLocalSymbols,JSCheckFunctionSignatures,JSIgnoredPromiseFromCall,JSValidateTypes,JSUnresolvedFunction
 // noinspection JSCheckFunctionSignatures
+let date_ob = new Date();
 const fs = require('fs');
 const random = require('random');
 const Sequelize = require('sequelize');
@@ -8,6 +9,7 @@ const Database = require("@replit/database");
 const db = new Database();
 const { drawCard } = require('discord-welcome-card');/////////////////Discord Modules///////////////////
 const { Client, Collection, Intents } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 const { token } = require('./config.json');
 const client = new Client({
     intents: [
@@ -55,6 +57,7 @@ client.on('interactionCreate', async interaction => {
 });
 ///////////////////Actual welcome function///////////////////////////
 client.on("guildMemberAdd", async (member) => {			let serverID = member.guild.id;
+
 console.log(member);
 		let username = member.user.username;
 				let chn = await db.get(serverID)
@@ -66,29 +69,16 @@ console.log(member);
 		let serverID3 = "3" + serverID;
 				let subtitle = await db.get(serverID3);
 				if (!title) {let subtitle = "or smthn"}
-		let serverID5 = "4" + serverID;
-				let bgimg = await db.get(serverID5);
-				if (!bgimg) {let bgimg = "https://i.imgur.com/ea9PB3H.png"}
-    let image = await drawCard({
-        theme: "code",
-        text: {
-            title: title,
-            text: username,
-            subtitle: subtitle,
-            color: `#140E32`
-        },
-        avatar: {
-            image: member.user.displayAvatarURL({ format: 'png' }),
-            outlineWidth: 5,
-            outlineColor: `#271496`,
-        },
-        background: "https://i.imgur.com/ea9PB3H.png",
-        blur: 1,
-        border: true,
-        rounded: true
-    });
-		console.log(image)
-		channel.send("Elo")
+		let welcomembed =  new MessageEmbed()
+	.setColor('#0099ff')
+	.setTitle(title)
+	.setDescription(subtitle)
+	.setThumbnail('https://i.imgur.com/AfFp7pu.png')
+	.setImage('https://i.imgur.com/AfFp7pu.png')
+	.setTimestamp()
+	.setFooter('Made with DW(m)B. Run /invite!');
+
+channel.send({ embeds: [exampleEmbed] });
 	})
 /////////////////LogMeIntoDiscordAndBeyond//////////////
 // noinspection JSIgnoredPromiseFromCall

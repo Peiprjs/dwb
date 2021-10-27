@@ -62,7 +62,9 @@ module.exports = {
                     const msgchannel = interaction.options.getChannel('channel');
                     // noinspection JSUnusedLocalSymbols
                     let channelID = msgchannel.id;
-                    let serverID = interaction.guild.id
+										let serverID = interaction.guild.id
+
+                    db.set(serverID, channelID).then(() => {});
                     // noinspection JSUnusedLocalSymbols
                     let key = await db.get(serverID);
                     if (key === channelID) {
