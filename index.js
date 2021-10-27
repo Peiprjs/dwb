@@ -61,8 +61,9 @@ client.on('guildMemberAdd', (member)  => {
 2[serverID] = title of the card
 3[serverID] = subtitle of the card
 5[serverID] = background image of the card*/
-				let channel = db.get(serverID);
-				if (!channel) {let channel = "0"};
+				let chn = db.get(serverID);
+				if (!chn) {let channel = "0"};
+				const channel = client.channels.cache.get(chn);
 		let serverID2 = "2" + serverID;
 				let title = db.get(serverID2);
 				if (!title) {let title = "Welcome"}
@@ -70,7 +71,7 @@ client.on('guildMemberAdd', (member)  => {
 				let subtitle = db.get(serverID3);
 				if (!title) {let subtitle = "or smthn"}
 		let serverID5 = "4" + serverID;
-				let bgimg = db.get(serverID4);
+				let bgimg = db.get(serverID5);
 				if (!bgimg) {let bgimg = "https://i.imgur.com/ea9PB3H.png"}
     let image = drawCard({
         theme: "code",
@@ -91,7 +92,7 @@ client.on('guildMemberAdd', (member)  => {
         rounded: true
     });
 
-    message.channel.send({ files: [ image ] })
+    channel.send({ files: [ image ] })
 })
 /////////////////LogMeIntoDiscordAndBeyond//////////////
 // noinspection JSIgnoredPromiseFromCall
