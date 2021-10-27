@@ -69,12 +69,21 @@ console.log(member);
 		let serverID3 = "3" + serverID;
 				let subtitle = await db.get(serverID3);
 				if (!title) {let subtitle = "or something idk"}
-		let welcomembed =  new MessageEmbed()
+		let serverID5 = "5" + serverID;
+				let image = await db.get(serverID5);
+				if (!image) {let image = ""}
+			let date = ("0" + date_ob.getDate()).slice(-2);
+			let month = ("0" + (date_ob.getMonth() + 1)).slice(-2);
+			let year = date_ob.getFullYear();
+			let hours = date_ob.getHours();
+			let minutes = date_ob.getMinutes();
+			let seconds = date_ob.getSeconds();
+		let time = (date + "/" + month + "/" + year + " " + hours + ":" + minutes + ":" + seconds)
+	let welcomembed =  new MessageEmbed()
 	.setColor('#8abbdc')
 	.setTitle(title)
 	.setDescription(subtitle)
-	.setThumbnail('https://i.imgur.com/AfFp7pu.png')
-	.setImage('https://i.imgur.com/AfFp7pu.png')
+	.setImage(image)
 	.setTimestamp()
 	.setFooter('Made with DW(m)B. Run /invite!');
 

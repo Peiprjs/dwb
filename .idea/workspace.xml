@@ -7,7 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Correction" />
+    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Mega bug was squashed">
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -374,7 +376,21 @@
       <option name="project" value="LOCAL" />
       <updated>1635291363372</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Commit message">
+      <created>1635377942782</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1635377942782</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Mega bug was squashed">
+      <created>1635378083463</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1635378083463</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +440,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="WHAT THE FUCK IS GOING ON" />
     <MESSAGE value="Added /invite" />
     <MESSAGE value="I want all suffering to end" />
     <MESSAGE value="commit message" />
@@ -448,7 +463,9 @@
     <MESSAGE value="Fixed a bug" />
     <MESSAGE value="NPM install" />
     <MESSAGE value="Correction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction" />
+    <MESSAGE value="Commit message" />
+    <MESSAGE value="Mega bug was squashed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mega bug was squashed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
