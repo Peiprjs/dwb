@@ -49,7 +49,6 @@ module.exports = {
 ////////////////////////SET_CHN/////////////////////////
     async execute(interaction) {
         if (interaction.options.getSubcommand() === 'channel') {
-            console.log(interaction.member.permissions.has("ADMINISTRATOR"));
             if (!interaction.member.permissions.has("ADMINISTRATOR")) {
                 await interaction.reply('Oi fuck off, get perms')
             }
