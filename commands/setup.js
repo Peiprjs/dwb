@@ -37,15 +37,6 @@ module.exports = {
                 option.setName('message')
                 .setDescription('The message you want to use as a 	subtitle of the welcome card	')
                 .setRequired(false)))
-        //SUBCOMMAND COLOUR//
-        .addSubcommand(subcommand =>
-            subcommand
-            .setName('colour')
-            .setDescription('Allows you to set up the color of the 	text of the card to be sent on join/leave')
-            .addStringOption(option =>
-                option.setName('colour')
-                .setDescription('The color you want to use for the 	of the welcome card. HEX only.')
-                .setRequired(false)))
         //SUBCOMMAND BACKGROUND IMAGE//
         .addSubcommand(subcommand =>
             subcommand
@@ -138,35 +129,6 @@ module.exports = {
                 }
             }
         }
-////////////////////////SET_COL/////////////////////////
-        else if (interaction.options.getSubcommand() === 'colour') {
-            if (!interaction.member.permissions.has("ADMINISTRATOR")) {
-                await interaction.reply('Oi fuck off, get perms')
-            }
-            if (interaction.member.permissions.has("ADMINISTRATOR")) {
-                if (!interaction.options.getString('colour')) {
-                    let serverID = interaction.guild.id;
-                    let serverID2 = "4" + serverID;
-                    let key = await db.get(serverID2);
-                    await interaction.reply(`Server welcome text colour is set to ${key}`)
-                } else {
-                    const msg = interaction.options.getString('colour');
-                    let serverID = interaction.guild.id;
-                    let serverID2 = "4" + serverID;
-                    const msg2 = "#" + msg
-                    db.set(serverID2, msg2).then(() => {});
-                    // noinspection JSUnusedLocalSymbols
-                    let key = await db.get(serverID2);
-                    console.log(key)
-                    if (key === msg) {
-                        await interaction.reply(`Server welcome text colour set successfully to ${key}`);
-                    } else {
-                        await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera')
-												console.log("Database error bro")
-                    }
-                }
-            }
-        }
 ////////////////////////SET_BG/////////////////////////
         else if (interaction.options.getSubcommand() === 'background') {
             if (!interaction.member.permissions.has("ADMINISTRATOR")) {
@@ -186,9 +148,9 @@ module.exports = {
                     let serverID2 = "5" + serverID;
                     db.set(serverID2, msg).then(() => {});
                     // noinspection JSUnusedLocalSymbols
-                    let key = await db.get(serverID2);
+                    let bgimg = await db.get(serverID2);
                     if (key === msg) {
-                    await interaction.reply(`Server welcome card background set successfully to ${key}`);
+                    await interaction.reply(`Server welcome card background set successfully to ${bgimg}`);
                     } else {
                         await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera');
 												console.log("Database error bro")
@@ -203,7 +165,5 @@ module.exports = {
 [serverID] = channel to send the message
 2[serverID] = title of the card
 3[serverID] = subtitle of the card
-4[serverID] = color of the text of the card
 5[serverID] = background image of the card
-6[serverID] = blur?
-7[serverID] = rounded?*/
+*/

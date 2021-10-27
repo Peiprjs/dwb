@@ -1,5 +1,5 @@
 /////////////////ND Modules///////////////////
-// noinspection JSUnusedLocalSymbols,JSCheckFunctionSignatures,JSIgnoredPromiseFromCall,JSValidateTypes,JSUnresolvedFunction,SpellCheckingInspection
+// noinspection JSUnusedLocalSymbols,JSCheckFunctionSignatures,JSIgnoredPromiseFromCall,JSValidateTypes,JSUnresolvedFunction
 // noinspection JSCheckFunctionSignatures
 const fs = require('fs');
 const random = require('random');
@@ -54,24 +54,38 @@ client.on('interactionCreate', async interaction => {
     }
 });
 ///////////////////Actual welcome function///////////////////////////
-client.on('guildMemberAdd', (member)  => { 
-    const image = drawCard({
-        theme: "circuit",
+client.on('guildMemberAdd', (member)  => {
+		let serverID = member.guild.id;
+/*Explanation on how the database SUID work.
+[serverID] = channel to send the message
+2[serverID] = title of the card
+3[serverID] = subtitle of the card
+5[serverID] = background image of the card*/
+				let channel = db.get(serverID);
+				if (!channel) {let channel = "0"};
+		let serverID2 = "2" + serverID;
+				let title = db.get(serverID2);
+				if (!title) {let title = "Welcome"}
+		let serverID3 = "3" + serverID;
+				let subtitle = db.get(serverID3);
+				if (!title) {let subtitle = "or smthn"}
+		let serverID5 = "4" + serverID;
+				let bgimg = db.get(serverID4);
+				if (!bgimg) {let bgimg = "https://i.imgur.com/ea9PB3H.png"}
+    let image = drawCard({
+        theme: "code",
         text: {
-            title: 'Hellloo',
-            text: message.author.tag,
-            subtitle: 'please read the Rules',
-            color: `#88f`
+            title: title,
+            text: member.user.tag,
+            subtitle: subtitle,
+            color: `#140E32`
         },
         avatar: {
-            image: message.author.displayAvatarURL({ format: 'png' }),
+            image: member.user.displayAvatarURL({ format: 'png' }),
             outlineWidth: 5,
-            outlineColor: new Gradient('linear',
-                [0, '#33f'],
-                [1, '#f33']
-            ),
+            outlineColor: `#271496`,
         },
-        background: 'https://i.imgur.com/ea9PB3H.png',
+        background: bgimg,
         blur: 1,
         border: true,
         rounded: true
