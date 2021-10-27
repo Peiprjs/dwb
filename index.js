@@ -61,16 +61,16 @@ client.on("guildMemberAdd", async (member) => {			let serverID = member.guild.id
 console.log(member);
 		let username = member.user.username;
 				let chn = await db.get(serverID)
-				if (!chn) {let channel = "0"};
+				if (!chn) {let channel = "0"}
 		const channel = client.channels.cache.get(chn);	
 		let serverID2 = "2" + serverID;
 				let title = await db.get(serverID2);
 				if (!title) {let title = "Welcome"}
 		let serverID3 = "3" + serverID;
 				let subtitle = await db.get(serverID3);
-				if (!title) {let subtitle = "or smthn"}
+				if (!title) {let subtitle = "or something idk"}
 		let welcomembed =  new MessageEmbed()
-	.setColor('#0099ff')
+	.setColor('#8abbdc')
 	.setTitle(title)
 	.setDescription(subtitle)
 	.setThumbnail('https://i.imgur.com/AfFp7pu.png')
@@ -78,7 +78,7 @@ console.log(member);
 	.setTimestamp()
 	.setFooter('Made with DW(m)B. Run /invite!');
 
-channel.send({ embeds: [exampleEmbed] });
+channel.send({ embeds: [welcomembed] });
 	})
 /////////////////LogMeIntoDiscordAndBeyond//////////////
 // noinspection JSIgnoredPromiseFromCall
