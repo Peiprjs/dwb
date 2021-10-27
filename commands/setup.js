@@ -37,11 +37,11 @@ module.exports = {
                 option.setName('message')
                 .setDescription('The message you want to use as a 	subtitle of the welcome card	')
                 .setRequired(false)))
-        //SUBCOMMAND BACKGROUND IMAGE//
+        //SUBCOMMAND  IMAGE//
         .addSubcommand(subcommand =>
             subcommand
-            .setName('background')
-            .setDescription('Allows you to set up the background image of the card to be sent on join/leave')
+            .setName('image')
+            .setDescription('Allows you to set up the banner image of the card to be sent on join/leave')
             .addStringOption(option =>
                 option.setName('link')
                 .setDescription('The direct link to the image you want to use (the link should end with .png or .jpeg).')
@@ -141,7 +141,7 @@ module.exports = {
                     let serverID = interaction.guild.id;
                     let serverID2 = "5" + serverID;
                     let key = await db.get(serverID2);
-                    await interaction.reply(`Server welcome card background set to ${key}`)
+                    await interaction.reply(`Server welcome embed banner set to ${key}`)
                 } else {
                     let msg = interaction.options.getString('link');
                     let serverID = interaction.guild.id;
@@ -150,7 +150,7 @@ module.exports = {
                     // noinspection JSUnusedLocalSymbols
                     let key = await db.get(serverID2);
                     if (key === msg) {
-                    await interaction.reply(`Server welcome card background set successfully to ${key}`);
+                    await interaction.reply(`Server welcome embed banner set successfully to ${key}`);
                     } else {
                         await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera');
 												console.log("Database error bro")
@@ -165,5 +165,5 @@ module.exports = {
 [serverID] = channel to send the message
 2[serverID] = title of the card
 3[serverID] = subtitle of the card
-5[serverID] = background image of the card
+5[serverID] = banner image of the card
 */
