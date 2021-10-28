@@ -4,6 +4,7 @@ const {
 const Database = require("@replit/database");
 // noinspection JSValidateTypes
 const db = new Database()
+var validUrl = require('valid-url');
 // noinspection JSUnresolvedFunction
 module.exports = {
 ///////////////////SLASHIE BUILDER//////////////////////
@@ -130,19 +131,22 @@ module.exports = {
                 }
             }
         }
-////////////////////////SET_BG/////////////////////////
-        else if (interaction.options.getSubcommand() === 'background') {
+////////////////////////SET_IMG/////////////////////////
+        else if (interaction.options.getSubcommand() === 'image') {
             if (!interaction.member.permissions.has("ADMINISTRATOR")) {
                 await interaction.reply('Oi fuck off, get perms')
             }
             if (interaction.member.permissions.has("ADMINISTRATOR")) {
-                if (!interaction.options.getString('link')) {
-                    let serverID = interaction.guild.id;
+                if(!interaction.options.getString('link')) {
+								    let serverID = interaction.guild.id;
                     let serverID2 = "5" + serverID;
                     let key = await db.get(serverID2);
                     await interaction.reply(`Server welcome embed banner set to ${key}`)
                 } else {
-                    let msg = interaction.options.getString('link');
+									//////////////////////////////////
+                    let msg = await interaction.options.getString('link');
+										if (validUrl.isUri(msg)) {
+										if (msg.endsWith(".png") || msg.endsWith(".jpg")){
                     let serverID = interaction.guild.id;
                     let serverID2 = "5" + serverID;
                     db.set(serverID2, msg).then(() => {});
@@ -153,9 +157,9 @@ module.exports = {
                     } else {
                         await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera');
 												console.log("Database error bro")
-                    }
-                }
-            }
+										}} else {await interaction.reply("GIVE ME A DAMN PNG OR A JPG. I NEED TO SNORT AN IMAGE FILE NOT AN HTML FILE")}}	
+                    else {await interaction.reply('Need an actual URL, maybe? Like an http://something.com/image.png')}
+						}}
         }
 //////////////////////END OF CODE///////////////////////
     },
