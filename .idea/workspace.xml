@@ -7,8 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Mega bug was squashed">
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Time function finally working I think">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <recent name="C:\Users\PolRocaCugat\Documents\GitHub\dmb" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.Build test commands">
+  <component name="RunManager" selected="Node.js.Build commands">
     <configuration name="Build commands" type="NodeJSConfigurationType" path-to-js-file="deploy-prod-commands.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -390,7 +390,21 @@
       <option name="project" value="LOCAL" />
       <updated>1635378083463</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Time functions">
+      <created>1635378418718</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1635378418718</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Time function finally working I think">
+      <created>1635378519239</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1635378519239</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,8 +454,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added /invite" />
-    <MESSAGE value="I want all suffering to end" />
     <MESSAGE value="commit message" />
     <MESSAGE value="1" />
     <MESSAGE value="Here it all starts!" />
@@ -465,7 +477,9 @@
     <MESSAGE value="Correction" />
     <MESSAGE value="Commit message" />
     <MESSAGE value="Mega bug was squashed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mega bug was squashed" />
+    <MESSAGE value="Time functions" />
+    <MESSAGE value="Time function finally working I think" />
+    <option name="LAST_COMMIT_MESSAGE" value="Time function finally working I think" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
