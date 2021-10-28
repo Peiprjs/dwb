@@ -156,7 +156,7 @@ module.exports = {
                     await interaction.reply(`Server welcome embed banner set successfully to ${key}`);
                     } else {
                         await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera');
-												console.log("Database error bro")
+												console.log("Database error bro " + key)
 										}} else {await interaction.reply("GIVE ME A DAMN PNG OR A JPG. I NEED TO SNORT AN IMAGE FILE NOT AN HTML FILE")}}	
                     else {await interaction.reply('Need an actual URL, maybe? Like an http://something.com/image.png')}
 						}}
