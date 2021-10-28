@@ -83,7 +83,7 @@ client.on("guildMemberAdd", async (member) => {			let serverID = member.guild.id
 	.setDescription(subtitle)
 	.setImage(image)
 	.setTimestamp(time)
-	.setFooter('Made with DW(m)B. Run /invite!');
+	.setFooter('Made with DW(m)B. Run /invite! | Sent at ' + time);
 
 channel.send({ embeds: [welcomembed] });
 	})
