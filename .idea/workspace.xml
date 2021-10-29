@@ -8,11 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Bugkill. That's what I call a lotta files">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_10_2021_17_12_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_10_2021_17_12__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/core-util-is/float.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/core-util-is/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sqlite3/lib/binding/napi-v3-win32-x64/node_sqlite3.node" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/node-pre-gyp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/node-pre-gyp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/node-pre-gyp.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/node-pre-gyp.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/node-pre-gyp.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/node-pre-gyp.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,9 +97,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Node.js.Start" />
       <item itemvalue="Node.js.Build commands" />
       <item itemvalue="Node.js.Build test commands" />
-      <item itemvalue="Node.js.Start" />
       <item itemvalue="npm.start" />
     </list>
   </component>
@@ -120,7 +121,7 @@
       <workItem from="1635249830449" duration="4508000" />
       <workItem from="1635264877496" duration="3285000" />
       <workItem from="1635291027934" duration="982000" />
-      <workItem from="1635519835299" duration="557000" />
+      <workItem from="1635519835299" duration="1037000" />
     </task>
     <task id="LOCAL-00001" summary="WHAT THE FUCK IS GOING ON">
       <created>1634830649226</created>
@@ -423,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635520332696</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Bugkill. That's what I call a lotta files">
+      <created>1635520424679</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1635520424679</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
