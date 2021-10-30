@@ -1,6 +1,7 @@
 {
   "name": "dwb",
   "version": "0.1.1",
+  "bin": "index.js",
   "description": "This is a Discord welcome (magical) bot - DW(m)B",
   "main": "index.js",
   "scripts": {
@@ -10,6 +11,12 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Peiprjs/dmb.git"
+  },
+  "pkg": {
+    "assets": [
+      "commands",
+      "config.json"
+    ]
   },
   "author": "Peipr#8989",
   "license": "MIT",
