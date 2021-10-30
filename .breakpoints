@@ -1,12 +1,3 @@
 {
-  "files": {
-    "commands/setup.js": [
-      {
-        "id": "dc763f45-93ab-4314-9013-a577698e9e3b",
-        "line": 7,
-        "version": 2642,
-        "index": 172
-      }
-    ]
-  }
+  "files": {}
 }

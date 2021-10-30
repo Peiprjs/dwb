@@ -80,7 +80,7 @@ client.on("guildMemberAdd", async (member) => {			let serverID = member.guild.id
 	let welcomembed =  new MessageEmbed()
 	.setColor('#8abbdc')
 	.setTitle(title)
-	.setDescription(subtitle)
+	.setDescription(subtitle + username)
 	.setImage(image)
 	.setTimestamp(time)
 	.setFooter('Made with DW(m)B. Run /invite! | Sent at ' + time);

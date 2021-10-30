@@ -63,7 +63,9 @@ module.exports = {
                     // noinspection JSUnusedLocalSymbols
                     let channelID = msgchannel.id;
 										let serverID = interaction.guild.id
-
+										if(message.guild.channels.cache.get(channelID) === undefined)  { 
+											await interaction.reply("WRONG")
+										} else {
                     db.set(serverID, channelID).then(() => {});
                     // noinspection JSUnusedLocalSymbols
                     let key = await db.get(serverID);
@@ -72,7 +74,7 @@ module.exports = {
                     } else {
                         await interaction.reply('Whoopsie noodles, something went wrong baboom try againa latera')
 												console.log("Database error bro")
-                    }
+                    }}
                 }
 
             }
