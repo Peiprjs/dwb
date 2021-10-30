@@ -8,11 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="Bugkill. That's what I call a lotta files">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_10_2021_17_12_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_10_2021_17_12__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/core-util-is/float.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/core-util-is/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/sqlite3/lib/binding/napi-v3-win32-x64/node_sqlite3.node" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +53,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JavaScript" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.12.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="16.11.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.11.6" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/commands" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -79,7 +74,7 @@
       <recent name="C:\Users\PolRocaCugat\Documents\GitHub\dmb" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.Build test commands">
+  <component name="RunManager" selected="Node.js.Build commands">
     <configuration name="Build commands" type="NodeJSConfigurationType" path-to-js-file="deploy-prod-commands.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -121,7 +116,8 @@
       <workItem from="1635249830449" duration="4508000" />
       <workItem from="1635264877496" duration="3285000" />
       <workItem from="1635291027934" duration="982000" />
-      <workItem from="1635519835299" duration="1037000" />
+      <workItem from="1635519835299" duration="1070000" />
+      <workItem from="1635580191844" duration="450000" />
     </task>
     <task id="LOCAL-00001" summary="WHAT THE FUCK IS GOING ON">
       <created>1634830649226</created>
@@ -431,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635520424679</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Bugkill. That's what I call a lotta files">
+      <created>1635520899443</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1635520899443</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
