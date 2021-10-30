@@ -5,8 +5,8 @@
   "description": "This is a Discord welcome (magical) bot - DW(m)B",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rm -r node_modules && npm install && npx nodemon"
+    "start": "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash\nexport NVM_DIR=\\\"$HOME/.nvm\\\"\n[ -s \\\"$NVM_DIR/nvm.sh\\\" ] && \\\\. \\\"$NVM_DIR/nvm.sh\\\"\n[ -s \\\"$NVM_DIR/bash_completion\\\" ] && \\\\.\\\"$NVM_DIR/bash_completion\\\"\nnvm install 16 && rm -r node_modules && npm install && npx nodemon",
+    "build": "node deploy-prod-commands.js"
   },
   "repository": {
     "type": "git",

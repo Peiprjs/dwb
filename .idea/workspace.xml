@@ -7,8 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="workspace.xml">
+    <list default="true" id="bf80f112-ef9e-4c16-8398-0cec5a3aee12" name="Changes" comment="A useless attempt to compile it into a .exe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.replit" beforeDir="false" afterPath="$PROJECT_DIR$/.replit" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +120,7 @@
       <workItem from="1635291027934" duration="982000" />
       <workItem from="1635519835299" duration="1070000" />
       <workItem from="1635580191844" duration="450000" />
-      <workItem from="1635610725191" duration="920000" />
+      <workItem from="1635610725191" duration="1245000" />
     </task>
     <task id="LOCAL-00001" summary="WHAT THE FUCK IS GOING ON">
       <created>1634830649226</created>
@@ -443,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635610756002</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="A useless attempt to compile it into a .exe">
+      <created>1635611727336</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1635611727336</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +501,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Setup setup" />
     <MESSAGE value="TOOK ME TOO GOD DAMN LONG TO SET COMMAND PERMS, OH MY GOD" />
     <MESSAGE value="Setup done, I may be able to finish this on time!" />
     <MESSAGE value="." />
@@ -518,7 +525,8 @@
     <MESSAGE value="Bugkill" />
     <MESSAGE value="Bugkill. That's what I call a lotta files" />
     <MESSAGE value="workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
+    <MESSAGE value="A useless attempt to compile it into a .exe" />
+    <option name="LAST_COMMIT_MESSAGE" value="A useless attempt to compile it into a .exe" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
