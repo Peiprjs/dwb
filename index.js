@@ -7,7 +7,7 @@ const random = require('random');
 const Sequelize = require('sequelize');
 const Database = require("@replit/database");
 const db = new Database();
-const { drawCard } = require('discord-welcome-card');/////////////////Discord Modules///////////////////
+/////////////////Discord Modules///////////////////
 const { Client, Collection, Intents } = require('discord.js');
 const { MessageEmbed } = require('discord.js');
 const { token } = require('./config.json');
@@ -80,7 +80,7 @@ client.on("guildMemberAdd", async (member) => {			let serverID = member.guild.id
 	let welcomembed =  new MessageEmbed()
 	.setColor('#8abbdc')
 	.setTitle(title)
-	.setDescription(subtitle)
+	.setDescription(subtitle + username)
 	.setImage(image)
 	.setTimestamp(time)
 	.setFooter('Made with DW(m)B. Run /invite! | Sent at ' + time);
